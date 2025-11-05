@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaffer Construction Sales Training</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .intro-section h2 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+
+        .company-facts {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .company-facts h3 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+
+        .company-facts ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .company-facts li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .company-facts li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+        }
+
+        .training-modules {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .module-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .module-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .module-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .week-number {
+            background: #3b82f6;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .module-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .module-card li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #555;
+        }
+
+        .module-card li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+        }
+
+        .resources-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .resources-section h2 {
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .resource-link {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #1e3a8a;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: block;
+        }
+
+        .resource-link:hover {
+            background: #eff6ff;
+            border-color: #3b82f6;
+            transform: translateX(4px);
+        }
+
+        .competitive-advantages {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .competitive-advantages h2 {
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+        }
+
+        .advantage-item {
+            background: #f8fafc;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 6px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .advantage-item h3 {
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        .footer-contact {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .training-modules {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shaffer Construction Sales Training</h1>
+        <p>B2B Facilities Maintenance & Commercial Electrical</p>
+    </header>
+
+    <div class="container">
+        <div class="intro-section">
+            <h2>Welcome to the Sales Training Program</h2>
+            <p>This comprehensive 5-week training program equips electricians with the skills needed to sell Shaffer Construction's electrical services to general contractors, facilities maintenance companies, and commercial property managers in the Los Angeles area.</p>
+
+            <div class="company-facts">
+                <h3>About Shaffer Construction</h3>
+                <ul>
+                    <li><strong>Founded:</strong> 2014</li>
+                    <li><strong>Address:</strong> 325 N. Larchmont Blvd. #202, Los Angeles, CA 90004</li>
+                    <li><strong>Phone:</strong> (323) 642-8509</li>
+                    <li><strong>Email:</strong> hello@shaffercon.com</li>
+                    <li><strong>License:</strong> CSLB #994593 (C-10 Electrical, B General Building, A General Engineering)</li>
+                    <li><strong>Owner:</strong> Mike Shaffer</li>
+                    <li><strong>Current Clients:</strong> Stratus, PVC, Brite Construction</li>
+                    <li><strong>Service Area:</strong> Los Angeles primary, statewide capable</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="competitive-advantages">
+            <h2>Our Competitive Advantages</h2>
+
+            <div class="advantage-item">
+                <h3>1. Triple Licensed (C-10, B, A)</h3>
+                <p>Broader capabilities than C-10-only competitors. Can act as general contractor for electrical-focused projects and access infrastructure work.</p>
+            </div>
+
+            <div class="advantage-item">
+                <h3>2. Small and Nimble</h3>
+                <p>Fast decision-making without bureaucracy, direct access to owners, personalized service, and maximum flexibility.</p>
+            </div>
+
+            <div class="advantage-item">
+                <h3>3. Los Angeles Expertise</h3>
+                <p>Deep knowledge of local permitting, relationships with inspectors, understanding of LA building codes, and no travel fees for local work.</p>
+            </div>
+
+            <div class="advantage-item">
+                <h3>4. Proven Relationships</h3>
+                <p>Current clients (Stratus, PVC, Brite Construction) as references with track record of reliable service.</p>
+            </div>
+
+            <div class="advantage-item">
+                <h3>5. Owner Accessibility</h3>
+                <p>Direct line to decision makers, personal attention to projects, and accountability at the highest level.</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 2rem; color: #1e3a8a;">5-Week Training Program</h2>
+
+        <div class="training-modules">
+            <div class="module-card">
+                <h3><span class="week-number">1</span> Company Foundation & Market</h3>
+                <ul>
+                    <li>Company overview and positioning</li>
+                    <li>Licensing as competitive advantage</li>
+                    <li>Understanding general contractors</li>
+                    <li>Facilities maintenance market</li>
+                    <li>B2B sales fundamentals</li>
+                    <li>Sales process and pipeline</li>
+                </ul>
+            </div>
+
+            <div class="module-card">
+                <h3><span class="week-number">2</span> Technical Sales & Relationships</h3>
+                <ul>
+                    <li>Getting on bid lists</li>
+                    <li>Prequalification process</li>
+                    <li>Responding to RFPs and bids</li>
+                    <li>Communication and follow-up</li>
+                    <li>Objection handling</li>
+                    <li>Building repeat business</li>
+                </ul>
+            </div>
+
+            <div class="module-card">
+                <h3><span class="week-number">3</span> Advanced Skills & Tools</h3>
+                <ul>
+                    <li>CRM and sales tools</li>
+                    <li>Territory planning</li>
+                    <li>Stakeholder management</li>
+                    <li>Service contracts selling</li>
+                    <li>Advanced sales scenarios</li>
+                    <li>Goal setting and planning</li>
+                </ul>
+            </div>
+
+            <div class="module-card">
+                <h3><span class="week-number">4</span> Field Training</h3>
+                <ul>
+                    <li>Shadow experienced team (2 days)</li>
+                    <li>Active participation (2 days)</li>
+                    <li>Real customer interactions</li>
+                    <li>Hands-on practice</li>
+                    <li>Immediate feedback</li>
+                    <li>Assessment and evaluation</li>
+                </ul>
+            </div>
+
+            <div class="module-card">
+                <h3><span class="week-number">5</span> Launch & Coaching</h3>
+                <ul>
+                    <li>First week in role</li>
+                    <li>Daily planning and execution</li>
+                    <li>Manager check-ins</li>
+                    <li>Pipeline development</li>
+                    <li>Ongoing support</li>
+                    <li>Continuous improvement</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resources-section">
+            <h2>Training Resources</h2>
+            <div class="resource-grid">
+                <a href="full-training-program.html" class="resource-link">📚 Full Training Program</a>
+                <a href="quick-reference.html" class="resource-link">📋 Quick Reference Guide</a>
+                <a href="objection-handling.html" class="resource-link">💬 Objection Handling Guide</a>
+                <a href="email-templates.html" class="resource-link">✉️ Email Templates</a>
+                <a href="prospecting-guide.html" class="resource-link">🎯 Prospecting Guide</a>
+                <a href="service-contracts.html" class="resource-link">📝 Service Contracts Guide</a>
+            </div>
+        </div>
+
+        <div class="intro-section">
+            <h2>Program Goals</h2>
+            <ul style="list-style: none; padding-left: 0;">
+                <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative;">
+                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: bold;">1.</span>
+                    Understand the B2B facilities maintenance market
+                </li>
+                <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative;">
+                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: bold;">2.</span>
+                    Master consultative selling for electrical subcontractor services
+                </li>
+                <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative;">
+                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: bold;">3.</span>
+                    Build relationships with general contractors and facilities managers
+                </li>
+                <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative;">
+                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: bold;">4.</span>
+                    Navigate RFPs, bids, and prequalification processes
+                </li>
+                <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative;">
+                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: bold;">5.</span>
+                    Achieve sales certification within 5 weeks
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Shaffer Construction, Inc.</strong></p>
+        <p>325 N. Larchmont Blvd. #202, Los Angeles, CA 90004</p>
+        <div class="footer-contact">
+            <p>Phone: (323) 642-8509 | Email: hello@shaffercon.com</p>
+            <p>License: CSLB #994593 (C-10, B, A)</p>
+        </div>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem;">© 2025 Shaffer Construction, Inc. | Version 1.0</p>
+    </footer>
+</body>
+</html>
