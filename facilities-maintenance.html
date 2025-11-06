@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities Maintenance Sales Training - Shaffer Construction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .nav-links {
+            background: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-links a {
+            color: #059669;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #059669;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #10b981;
+        }
+
+        h3 {
+            color: #059669;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        h4 {
+            color: #047857;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .company-facts {
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .company-facts ul, .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .company-facts li, .section ul li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .company-facts li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        .section ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+        }
+
+        .highlight-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box strong {
+            color: #92400e;
+        }
+
+        .talking-points {
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .pain-point {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .pain-point h4 {
+            color: #991b1b;
+            margin-bottom: 0.5rem;
+        }
+
+        .solution {
+            background: #ecfdf5;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            border-radius: 4px;
+        }
+
+        .solution strong {
+            color: #047857;
+        }
+
+        .script-box {
+            background: #f8fafc;
+            border: 2px solid #10b981;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 6px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+
+        .service-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .service-table th, .service-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .service-table th {
+            background: #ecfdf5;
+            font-weight: 600;
+            color: #059669;
+        }
+
+        .urgency-box {
+            background: #fee2e2;
+            border: 2px solid #dc2626;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+        }
+
+        .urgency-box h3 {
+            color: #991b1b;
+            margin-top: 0;
+        }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .section {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Facilities Maintenance Sales Training</h1>
+        <p>Pitching Commercial Service Work to Property Managers & Facilities Companies</p>
+    </header>
+
+    <div class="nav-links">
+        <a href="index.html">← Back to General Sales Training</a>
+    </div>
+
+    <div class="container">
+
+        <div class="section">
+            <h2>What is Facilities Maintenance Work?</h2>
+            <p><strong>Commercial service work for buildings and properties.</strong> This is ongoing electrical maintenance, repairs, and emergency service for commercial properties, NOT one-time construction projects.</p>
+
+            <h3>Types of Facilities Maintenance Work:</h3>
+            <ul>
+                <li><strong>Emergency Service Calls:</strong> Power outages, electrical failures, safety hazards</li>
+                <li><strong>Preventive Maintenance:</strong> Regular inspections, testing, scheduled maintenance</li>
+                <li><strong>Repair Work:</strong> Fixing broken panels, outlets, lighting, circuits</li>
+                <li><strong>Code Compliance:</strong> Bringing systems up to code, passing inspections</li>
+                <li><strong>Tenant Service:</strong> Electrical work for individual tenants in buildings</li>
+                <li><strong>Upgrades:</strong> Panel replacements, lighting retrofits, system improvements</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Key Difference:</strong> Facilities maintenance is ONGOING SERVICE, not project-based construction. You're building long-term relationships and recurring revenue, not bidding one-off jobs.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Who You're Targeting</h2>
+
+            <h3>1. Property Management Companies</h3>
+            <p><strong>What they do:</strong> Manage multiple commercial buildings for property owners</p>
+            <p><strong>What they need:</strong></p>
+            <ul>
+                <li>Reliable electricians for tenant electrical issues</li>
+                <li>Fast emergency response when systems fail</li>
+                <li>Preventive maintenance to avoid problems</li>
+                <li>One contractor who can handle all their properties</li>
+                <li>Predictable, fair pricing</li>
+            </ul>
+
+            <h3>2. Facilities Managers</h3>
+            <p><strong>What they do:</strong> Manage building operations for single or multiple properties</p>
+            <p><strong>What they need:</strong></p>
+            <ul>
+                <li>24/7 emergency electrical support</li>
+                <li>Regular maintenance programs</li>
+                <li>Code compliance and inspections</li>
+                <li>Budget-friendly service contracts</li>
+                <li>Responsive contractor who answers calls</li>
+            </ul>
+
+            <h3>3. Multi-Property Owners</h3>
+            <p><strong>What they do:</strong> Own and operate multiple commercial buildings</p>
+            <p><strong>What they need:</strong></p>
+            <ul>
+                <li>Consistent service across all properties</li>
+                <li>Reliable contractor they can trust</li>
+                <li>Preventive maintenance to protect investment</li>
+                <li>Emergency coverage when needed</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Their Pain Points (What Keeps Them Up at Night)</h2>
+
+            <div class="pain-point">
+                <h4>😰 "I can't get contractors to answer the phone"</h4>
+                <div class="solution">
+                    <strong>How we solve it:</strong> We answer calls 24/7. Small team means you talk to real people who can make decisions, not voicemail. Emergency response within 30-60 minutes.
+                </div>
+            </div>
+
+            <div class="pain-point">
+                <h4>😰 "Electrical emergencies shut down my building"</h4>
+                <div class="solution">
+                    <strong>How we solve it:</strong> Fast emergency response, 30-60 minutes on-site. We understand downtime costs you money. We get you back up and running FAST.
+                </div>
+            </div>
+
+            <div class="pain-point">
+                <h4>😰 "I never know what electrical work is going to cost"</h4>
+                <div class="solution">
+                    <strong>How we solve it:</strong> Clear, upfront pricing. Service contracts with predictable monthly costs. No surprise bills. Transparent about what things cost BEFORE we do the work.
+                </div>
+            </div>
+
+            <div class="pain-point">
+                <h4>😰 "My building has old electrical systems"</h4>
+                <div class="solution">
+                    <strong>How we solve it:</strong> We've worked on buildings since the 1950s. Experience with old systems AND new technology. We can assess, recommend upgrades, and plan for the future.
+                </div>
+            </div>
+
+            <div class="pain-point">
+                <h4>😰 "I need to comply with new regulations (NFPA 70B)"</h4>
+                <div class="solution">
+                    <strong>How we solve it:</strong> As of 2023, NFPA 70B REQUIRES electrical maintenance plans. Insurance companies are checking compliance. Our preventive maintenance contracts ensure you're compliant and have documentation to prove it.
+                </div>
+            </div>
+
+            <div class="pain-point">
+                <h4>😰 "I manage 10+ buildings, I can't keep track of electrical contractors"</h4>
+                <div class="solution">
+                    <strong>How we solve it:</strong> One contractor for all your properties. We track everything, provide regular reports, and become your electrical partner across your entire portfolio.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Why They Should Choose Shaffer Construction</h2>
+
+            <h3>1. We Actually Answer the Phone</h3>
+            <div class="talking-points">
+                <strong>The stat:</strong> 78% of leads go to the first contractor who responds.<br>
+                <strong>What to say:</strong> "When you call us, we answer. Not voicemail, not 'we'll call you back in 3 days.' Real people, real answers, right away. For emergencies, we're on-site within 30-60 minutes."
+            </div>
+
+            <h3>2. Small Team = Personal Service</h3>
+            <div class="talking-points">
+                <strong>What to say:</strong> "Our team is 4 electricians. That means when you call, you get the same people every time. We're not juggling 500 properties. You get personal attention and we actually remember your buildings."
+            </div>
+
+            <h3>3. We Know LA Inside and Out</h3>
+            <div class="talking-points">
+                <strong>What to say:</strong> "We're LA-based and know the permitting, inspectors, and local codes. No travel fees, no 'we'll have to check on that.' We know this market."
+            </div>
+
+            <h3>4. Licensed for More Than Just Electrical</h3>
+            <div class="talking-points">
+                <strong>What to say:</strong> "We're licensed C-10, B, and A. That means we can handle broader scopes than typical electricians. If you need general building work or infrastructure, we can do it. One contractor, more capabilities."
+            </div>
+
+            <h3>5. Proven Track Record</h3>
+            <div class="talking-points">
+                <strong>What to say:</strong> "We've been serving commercial properties since 2014. We work with established clients like Stratus, PVC, and Brite Construction. Happy to provide references."
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Services We Offer for Facilities Maintenance</h2>
+
+            <table class="service-table">
+                <tr>
+                    <th>Service Type</th>
+                    <th>What We Do</th>
+                    <th>Typical Response Time</th>
+                </tr>
+                <tr>
+                    <td><strong>Emergency Service</strong></td>
+                    <td>Power outages, electrical failures, safety hazards, equipment down</td>
+                    <td>30-60 minutes on-site</td>
+                </tr>
+                <tr>
+                    <td><strong>Preventive Maintenance</strong></td>
+                    <td>Regular inspections, testing, scheduled maintenance, NFPA 70B compliance</td>
+                    <td>Scheduled monthly/quarterly</td>
+                </tr>
+                <tr>
+                    <td><strong>Repairs</strong></td>
+                    <td>Fix panels, outlets, circuits, lighting, switches, breakers</td>
+                    <td>Within 24-48 hours</td>
+                </tr>
+                <tr>
+                    <td><strong>Code Compliance</strong></td>
+                    <td>Bring systems up to code, pass inspections, documentation</td>
+                    <td>Scheduled as needed</td>
+                </tr>
+                <tr>
+                    <td><strong>Tenant Services</strong></td>
+                    <td>Individual tenant electrical needs, build-outs, modifications</td>
+                    <td>Within 24-48 hours</td>
+                </tr>
+                <tr>
+                    <td><strong>Upgrades</strong></td>
+                    <td>Panel replacements, lighting retrofits, system modernization</td>
+                    <td>Planned projects</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Your Pitch (Memorize This)</h2>
+
+            <h3>30-Second Pitch</h3>
+            <div class="script-box">Hi, I'm [Your Name] with Shaffer Construction. We're a Los Angeles electrical contractor specializing in commercial service work and facilities maintenance.
+
+We provide emergency electrical service (30-60 minute response), preventive maintenance programs, and ongoing electrical support for commercial properties.
+
+Our small team means you get personal service and we actually answer the phone. We work with property managers and facilities companies across LA.
+
+Would it make sense to discuss your electrical service needs?</div>
+
+            <h3>2-Minute Full Pitch</h3>
+            <div class="script-box">Hi, I'm [Your Name] with Shaffer Construction. We're a licensed electrical contractor in Los Angeles specializing in facilities maintenance and commercial service work.
+
+Here's what we do:
+• Emergency electrical service, 24/7, 30-60 minute response
+• Preventive maintenance programs (now required by NFPA 70B)
+• Regular repairs and tenant electrical work
+• Code compliance and inspections
+• Multi-property coverage
+
+What makes us different:
+
+First, we actually answer the phone. I know that sounds basic, but 78% of property managers say they can't get contractors to call back. We answer 24/7.
+
+Second, our team is small, just 4 electricians. That's an advantage for you because you get the same people every time, not random crews. We remember your buildings and your systems.
+
+Third, we're LA-based and know the permitting, codes, and inspectors. No learning curve, no travel fees.
+
+Fourth, we're licensed C-10, B, and A, which gives us broader capabilities than typical electricians.
+
+We work with property managers and facilities companies who need reliable electrical support they can count on. We offer both on-call service and preventive maintenance contracts with predictable monthly pricing.
+
+Would it make sense to discuss your properties and electrical needs?</div>
+        </div>
+
+        <div class="section">
+            <h2>Discovery Questions (Ask These First)</h2>
+            <p><strong>Don't pitch first. Ask questions to understand their situation:</strong></p>
+
+            <ul>
+                <li>"How many properties do you manage?" (understand scope)</li>
+                <li>"What's your biggest electrical headache right now?" (find pain point)</li>
+                <li>"How do you currently handle electrical emergencies?" (understand current solution)</li>
+                <li>"How often do electrical issues come up?" (understand frequency)</li>
+                <li>"Do you have a regular electrician or call different people each time?" (understand relationship status)</li>
+                <li>"What's most important to you in an electrical contractor?" (understand priorities)</li>
+                <li>"Are you required to have preventive maintenance programs for insurance or compliance?" (NFPA 70B)</li>
+                <li>"How old are the electrical systems in your buildings?" (assess needs)</li>
+                <li>"What's your process for approving new vendors?" (understand decision process)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>The NFPA 70B Compliance Opportunity</h2>
+
+            <div class="urgency-box">
+                <h3>🚨 NEW REQUIREMENT (2023): NFPA 70B Now MANDATORY</h3>
+                <p><strong>What changed:</strong> As of 2023, NFPA 70B requires documented electrical maintenance plans for commercial buildings.</p>
+                <p><strong>Why it matters:</strong> Insurance companies are now checking compliance. Buildings without maintenance plans risk coverage issues.</p>
+                <p><strong>The opportunity:</strong> Most property managers don't know about this yet. YOU can educate them and provide the solution.</p>
+            </div>
+
+            <h3>How to Use This in Your Pitch:</h3>
+            <div class="script-box">"Are you aware of the new NFPA 70B requirements that went into effect in 2023? It now REQUIRES documented electrical maintenance plans for commercial buildings.
+
+Insurance companies are starting to check compliance. Properties without documented maintenance programs could face coverage issues.
+
+Our preventive maintenance contracts ensure you're compliant and have all the documentation you need. We handle inspections, testing, maintenance, and provide detailed reports that satisfy NFPA 70B requirements.
+
+Would it make sense to discuss a maintenance program for your properties?"</div>
+
+            <h3>Key Stats to Mention:</h3>
+            <ul>
+                <li>Facilities WITHOUT preventive maintenance have 3x more electrical equipment damage</li>
+                <li>Emergency electrical repairs cost 2-4x more than preventive maintenance</li>
+                <li>Average unplanned electrical downtime costs $5,000-$50,000+ depending on facility</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Service Contract Options (What to Offer)</h2>
+
+            <h3>Option 1: On-Call Service Agreement</h3>
+            <p><strong>Best for:</strong> Property managers testing the relationship</p>
+            <p><strong>What's included:</strong></p>
+            <ul>
+                <li>Priority response (you jump the queue)</li>
+                <li>24/7 emergency availability</li>
+                <li>Discounted service rates (15-20% off)</li>
+                <li>Dedicated contact person</li>
+                <li>No scheduled maintenance</li>
+            </ul>
+            <p><strong>Pricing:</strong> Low monthly fee ($100-300) OR just discounted rates with no monthly fee</p>
+
+            <h3>Option 2: Preventive Maintenance Contract</h3>
+            <p><strong>Best for:</strong> Properties needing NFPA 70B compliance</p>
+            <p><strong>What's included:</strong></p>
+            <ul>
+                <li>Quarterly or monthly scheduled inspections</li>
+                <li>Testing and maintenance of panels, breakers, systems</li>
+                <li>NFPA 70B compliance documentation</li>
+                <li>Annual summary reports</li>
+                <li>Priority emergency response</li>
+                <li>Discounted service call rates</li>
+            </ul>
+            <p><strong>Pricing:</strong> $500-$2,500/month depending on property size and frequency</p>
+
+            <h3>Option 3: Full-Service Contract</h3>
+            <p><strong>Best for:</strong> Multi-property managers who want complete coverage</p>
+            <p><strong>What's included:</strong></p>
+            <ul>
+                <li>All preventive maintenance</li>
+                <li>All service calls and repairs (within defined scope)</li>
+                <li>Emergency response (30-60 minutes)</li>
+                <li>24/7 availability</li>
+                <li>Complete NFPA 70B compliance</li>
+                <li>Quarterly reviews and reports</li>
+            </ul>
+            <p><strong>Pricing:</strong> $2,000-$10,000+/month depending on scope</p>
+
+            <div class="talking-points">
+                <strong>How to present:</strong> Start with the full-service option to anchor their expectations high, then recommend the preventive maintenance contract as the "best value for most properties."
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Common Objections & Responses</h2>
+
+            <div class="pain-point">
+                <h4>❌ "We already have an electrician"</h4>
+                <div class="solution">
+                    <strong>✓ Response:</strong> "That's great you have someone. How's their response time when you have emergencies? Do they answer after hours? A lot of our clients keep their current electrician and use us as backup for emergencies or when they're unavailable. Would that make sense?"
+                </div>
+            </div>
+
+            <div class="pain-point">
+                <h4>❌ "We just call someone when we need them"</h4>
+                <div class="solution">
+                    <strong>✓ Response:</strong> "I hear that a lot. The challenge is emergency rates are 2-4x higher than preventive maintenance, plus you're scrambling to find someone when you have a crisis. And with the new NFPA 70B requirements, insurance companies want documented maintenance. A service agreement gives you priority response, lower rates, and compliance. Want to see the numbers?"
+                </div>
+            </div>
+
+            <div class="pain-point">
+                <h4>❌ "We can't afford a maintenance contract"</h4>
+                <div class="solution">
+                    <strong>✓ Response:</strong> "Let me ask, what does one electrical emergency cost you? Usually $1,000-$5,000 in repairs, plus downtime costs. Our preventive maintenance contract typically pays for itself by avoiding just one or two emergencies per year. Plus you're compliant with NFPA 70B. It's really insurance against bigger problems."
+                </div>
+            </div>
+
+            <div class="pain-point">
+                <h4>❌ "Our systems are pretty new, we don't need maintenance"</h4>
+                <div class="solution">
+                    <strong>✓ Response:</strong> "Actually, even new systems benefit from regular inspections. Plus, NFPA 70B compliance is required regardless of system age. And building a maintenance history now protects your warranty and adds value. Better to start while everything's working well."
+                </div>
+            </div>
+
+            <div class="pain-point">
+                <h4>❌ "I need to think about it"</h4>
+                <div class="solution">
+                    <strong>✓ Response:</strong> "Absolutely, this is an important decision. What specific aspects are you considering? [Listen] How about this: let's start with a one-time inspection of your properties. We'll assess the systems, identify any issues, and show you what a maintenance program would look like. No commitment. Fair?"
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Where to Find Facilities Maintenance Prospects</h2>
+
+            <h3>1. Commercial Property Management Companies in LA</h3>
+            <p>Research property management companies online. Look for:</p>
+            <ul>
+                <li>Companies managing 5+ commercial buildings</li>
+                <li>Office buildings, retail centers, industrial properties</li>
+                <li>LinkedIn search: "Property Manager" + "Los Angeles"</li>
+                <li>Commercial real estate directories</li>
+            </ul>
+
+            <h3>2. Multi-Building Property Owners</h3>
+            <ul>
+                <li>Office building owners with multiple properties</li>
+                <li>Retail center owners</li>
+                <li>Industrial property owners</li>
+                <li>Medical building owners</li>
+            </ul>
+
+            <h3>3. Facilities Management Companies</h3>
+            <ul>
+                <li>Companies that manage facilities for other businesses</li>
+                <li>Corporate facilities departments</li>
+                <li>Government facilities management</li>
+                <li>School district facilities</li>
+            </ul>
+
+            <h3>4. Current Clients</h3>
+            <ul>
+                <li>Ask Stratus, PVC, Brite Construction if they know property managers</li>
+                <li>Ask for warm introductions</li>
+                <li>Use them as references</li>
+            </ul>
+
+            <h3>5. Industry Events</h3>
+            <ul>
+                <li>BOMA (Building Owners and Managers Association) LA events</li>
+                <li>IFMA (International Facility Management Association) events</li>
+                <li>Commercial real estate networking events</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Email Template for Facilities Managers</h2>
+            <div class="script-box"><strong>Subject:</strong> Electrical Service & Maintenance for Your Properties
+
+Hi [Name],
+
+I'm [Your Name] with Shaffer Construction, a Los Angeles electrical contractor specializing in facilities maintenance and commercial service work.
+
+We provide:
+• 24/7 emergency electrical service (30-60 min response)
+• Preventive maintenance programs (NFPA 70B compliant)
+• Multi-property coverage with consistent service
+• Predictable pricing with service contract options
+
+Many property managers in LA face challenges getting contractors to answer calls or respond quickly to emergencies. Our small team (4 electricians) means you get personal attention and we're actually available when you need us.
+
+We'd love to discuss your properties and electrical service needs. Are you open to a brief conversation?
+
+Best regards,
+[Your Name]
+Shaffer Construction, Inc.
+(323) 642-8509
+hello@shaffercon.com</div>
+        </div>
+
+        <div class="section">
+            <h2>Follow-Up Strategy</h2>
+
+            <h3>After Initial Contact:</h3>
+            <ul>
+                <li><strong>Day 1:</strong> Send thank you email with company info and service overview</li>
+                <li><strong>Day 3:</strong> Follow up to answer questions</li>
+                <li><strong>Week 1:</strong> Send case study or article about NFPA 70B compliance</li>
+                <li><strong>Week 2:</strong> Phone call to discuss their specific properties</li>
+                <li><strong>Month 1:</strong> Offer free facility assessment</li>
+                <li><strong>Ongoing:</strong> Monthly check-ins, share relevant info</li>
+            </ul>
+
+            <h3>Offer a "Test Drive":</h3>
+            <div class="talking-points">
+                "Not ready for a full contract? How about this: next time you have an electrical issue, give us a call. See how we respond, how we work, what we charge. No commitment. If you like working with us, we can discuss a service agreement. If not, no hard feelings."
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Success Metrics</h2>
+
+            <table class="service-table">
+                <tr>
+                    <th>Activity</th>
+                    <th>Daily Goal</th>
+                    <th>Weekly Goal</th>
+                </tr>
+                <tr>
+                    <td>Property managers contacted (email/call)</td>
+                    <td>10-15</td>
+                    <td>50-75</td>
+                </tr>
+                <tr>
+                    <td>Meaningful conversations</td>
+                    <td>2-3</td>
+                    <td>10-15</td>
+                </tr>
+                <tr>
+                    <td>Meetings or facility assessments scheduled</td>
+                    <td>-</td>
+                    <td>3-5</td>
+                </tr>
+                <tr>
+                    <td>Service contract proposals sent</td>
+                    <td>-</td>
+                    <td>2-3</td>
+                </tr>
+                <tr>
+                    <td>New service agreements signed</td>
+                    <td>-</td>
+                    <td>1-2/month goal</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Key Reminders</h2>
+            <ul>
+                <li><strong>Lead with their pain:</strong> Contractors not answering, emergency response, compliance requirements</li>
+                <li><strong>NFPA 70B is your hook:</strong> Most don't know about this requirement. Educate them.</li>
+                <li><strong>Offer the test drive:</strong> Low barrier to try you out on one service call</li>
+                <li><strong>Answer the phone ALWAYS:</strong> This is your #1 differentiator</li>
+                <li><strong>Think long-term:</strong> One contract = recurring monthly revenue for years</li>
+                <li><strong>Small is an advantage:</strong> Personal service, same people every time</li>
+                <li><strong>Track everything:</strong> Every contact, conversation, follow-up in a spreadsheet</li>
+                <li><strong>Be patient:</strong> Service contracts take time to build trust</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Quick Reference Card</h2>
+            <div class="talking-points">
+                <p><strong>Who we target:</strong> Property managers, facilities managers, multi-property owners in LA</p>
+
+                <p><strong>What we offer:</strong> Emergency electrical service (30-60 min), preventive maintenance (NFPA 70B compliant), service contracts with predictable pricing</p>
+
+                <p><strong>Our advantages:</strong> We answer the phone 24/7, small team = personal service, LA expertise, licensed C-10/B/A, proven track record</p>
+
+                <p><strong>Their pain points:</strong> Can't get contractors to answer, unpredictable costs, emergency downtime, NFPA 70B compliance, aging systems</p>
+
+                <p><strong>Our hook:</strong> NFPA 70B now requires maintenance plans (most don't know this). We provide compliance + peace of mind.</p>
+
+                <p><strong>The ask:</strong> Start with on-call agreement or offer free facility assessment. Build trust, then upsell to preventive maintenance contract.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p><strong>Shaffer Construction, Inc.</strong></p>
+        <p>325 N. Larchmont Blvd. #202, Los Angeles, CA 90004</p>
+        <p>Phone: (323) 642-8509 | Email: hello@shaffercon.com</p>
+        <p>License: CSLB #994593 (C-10, B, A)</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">© 2025 Shaffer Construction, Inc.</p>
+    </footer>
+</body>
+</html>
